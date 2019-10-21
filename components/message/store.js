@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
-// mongodb+srv://db_user:ShfZGKCsrWwoZFq7@jagudelo-bwkiz.mongodb.net/test
+// mongodb+srv://db_user:ShfZGKCsrWwoZFq7@jagudelo-bwkiz.mongodb.net/test?retryWrites=true&w=majority
 mongoose.Promise = global.Promise
-mongoose.connect('mongodb+srv://db_user:ShfZGKCsrWwoZFq7@jagudelo-bwkiz.mongodb.net/test', {
+mongoose.connect('mongodb+srv://db_user:ShfZGKCsrWwoZFq7@jagudelo-bwkiz.mongodb.net/test?retryWrites=true&w=majority', {
     useNewUrlParser: true
 })
 console.log('established connection')
